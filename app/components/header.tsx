@@ -124,7 +124,7 @@ function Header() {
           </NavigationMenu>
         </div>
         <div className="flex justify-end w-full gap-4">
-          <div className="border-r hidden md:inline"></div>
+          <div className="hidden md:inline"></div>
           <Button>
             Agenda uma demonstração <PhoneCall className="w-4 h-4" />
           </Button>
