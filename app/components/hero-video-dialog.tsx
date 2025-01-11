@@ -79,6 +79,7 @@ export function HeroVideoDialog({
 
   return (
     <div className={cn("relative", className)}>
+      <div className="absolute transitiona-all duration-1000 opacity-95 -inset-px bg-gradient-to-r from-[#114D95] to-[#38D430] rounded-xl blur-3xl group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
       <div
         className="relative cursor-pointer group"
         onClick={() => setIsVideoOpen(true)}

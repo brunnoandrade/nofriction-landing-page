@@ -9,70 +9,72 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Menu, MoveRight, X } from "lucide-react";
-import { useState } from "react";
+import { Menu, PhoneCall, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import Logo from "./logo";
 
 function Header() {
   const navigationItems = [
     {
-      title: "Home",
+      title: "Metodologia",
       href: "/",
       description: "",
     },
     {
-      title: "Product",
-      description: "Managing a small business today is already tough.",
-      items: [
-        {
-          title: "Reports",
-          href: "/reports",
-        },
-        {
-          title: "Statistics",
-          href: "/statistics",
-        },
-        {
-          title: "Dashboards",
-          href: "/dashboards",
-        },
-        {
-          title: "Recordings",
-          href: "/recordings",
-        },
-      ],
+      title: "Clientes",
+      href: "/",
+      description: "",
     },
     {
-      title: "Company",
-      description: "Managing a small business today is already tough.",
-      items: [
-        {
-          title: "About us",
-          href: "/about",
-        },
-        {
-          title: "Fundraising",
-          href: "/fundraising",
-        },
-        {
-          title: "Investors",
-          href: "/investors",
-        },
-        {
-          title: "Contact us",
-          href: "/contact",
-        },
-      ],
+      title: "Soluções",
+      href: "/",
+      description: "",
+    },
+    {
+      title: "Funcionalidades",
+      href: "/",
+      description: "",
+    },
+    {
+      title: "Preço",
+      href: "/",
+      description: "",
     },
   ];
 
   const [isOpen, setOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="w-full z-40 fixed top-0 left-0 bg-background">
+    <header
+      className={`w-full z-10 fixed top-0 left-0 ${
+        isScrolled ? "bg-background" : ""
+      }`}
+    >
       <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
-        <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
-          <NavigationMenu className="flex justify-start items-start">
-            <NavigationMenuList className="flex justify-start gap-4 flex-row">
+        <div className="flex justify-start items-center">
+          <Logo />
+        </div>
+        <div className="hidden lg:flex justify-center items-center">
+          <NavigationMenu className="flex justify-center items-center">
+            <NavigationMenuList className="flex justify-center gap-4 flex-row">
               {navigationItems.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {item.href ? (
@@ -99,18 +101,19 @@ function Header() {
                               Book a call today
                             </Button>
                           </div>
-                          <div className="flex flex-col text-sm h-full justify-end">
-                            {item.items?.map((subItem) => (
-                              <NavigationMenuLink
-                                href={subItem.href}
-                                key={subItem.title}
-                                className="flex flex-row justify-between items-center hover:bg-muted py-2 px-4 rounded"
-                              >
-                                <span>{subItem.title}</span>
-                                <MoveRight className="w-4 h-4 text-muted-foreground" />
-                              </NavigationMenuLink>
-                            ))}
-                          </div>
+                          {/* Uncomment if you want to include the sub-items */}
+                          {/* <div className="flex flex-col text-sm h-full justify-end">
+                      {item.items?.map((subItem) => (
+                        <NavigationMenuLink
+                          href={subItem.href}
+                          key={subItem.title}
+                          className="flex flex-row justify-between items-center hover:bg-muted py-2 px-4 rounded"
+                        >
+                          <span>{subItem.title}</span>
+                          <MoveRight className="w-4 h-4 text-muted-foreground" />
+                        </NavigationMenuLink>
+                      ))}
+                    </div> */}
                         </div>
                       </NavigationMenuContent>
                     </>
@@ -120,16 +123,11 @@ function Header() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="flex lg:justify-center">
-          <p className="font-semibold">No Frition AI</p>
-        </div>
         <div className="flex justify-end w-full gap-4">
-          <Button variant="ghost" className="hidden md:inline">
-            Book a demo
-          </Button>
           <div className="border-r hidden md:inline"></div>
-          <Button variant="outline">Sign in</Button>
-          <Button>Get started</Button>
+          <Button>
+            Agenda uma demonstração <PhoneCall className="w-4 h-4" />
+          </Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>

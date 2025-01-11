@@ -3,11 +3,20 @@ import { motion } from "framer-motion";
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroVideoDialog } from "./hero-video-dialog";
+import FlickeringGrid from "./magic-ui/flickering-grid";
+import BackgroundHeroVideoLight from "@/assets/bg-hero-video-light.png";
+import BackgroundHeroVideoDark from "@/assets/bg-hero-video-dark.png";
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    () => [
+      "eficazes",
+      "assertivas",
+      "transformadoras",
+      "relevantes",
+      "valiosas",
+    ],
     []
   );
 
@@ -23,18 +32,30 @@ function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full">
-      <div className="container mx-auto z-20">
-        <div className="flex flex-col lg:flex-row gap-8 py-20 lg:py-40 items-center justify-center">
+    <div className="w-full relative">
+      <FlickeringGrid
+        className="absolute inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
+        squareSize={4}
+        gridGap={6}
+        color="#114D95"
+        maxOpacity={0.2}
+        flickerChance={0.1}
+        height={800}
+      />
+      <div className="container mx-auto z-10 relative">
+        <div className="flex flex-col lg:flex-row gap-8 py-20 lg:py-40 items-center">
           <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left max-w-lg">
             <div>
               <Button variant="secondary" size="sm" className="gap-4">
-                Read our launch article <MoveRight className="w-4 h-4" />
+                Conheça nossa plataforma em ação
+                <MoveRight className="w-4 h-4" />
               </Button>
             </div>
             <div>
-              <h1 className="text-5xl md:text-7xl tracking-tighter font-regular">
-                <span className="text-spektr-cyan-50">This is something</span>
+              <h1 className="text-5xl md:text-6xl tracking-tighter font-regular">
+                <span className="text-spektr-cyan-50">
+                  Uma solução de IA que converte opiniões em orientações
+                </span>
                 <span className="relative flex w-full justify-center lg:justify-start overflow-hidden text-center md:pb-4 md:pt-1">
                   &nbsp;
                   {titles.map((title, index) => (
@@ -61,34 +82,32 @@ function Hero() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground">
-                Managing a small business today is already tough. Avoid further
-                complications by ditching outdated, tedious trade methods. Our
-                goal is to streamline SMB trade, making it easier and faster
-                than ever.
+                Transforme comentários e reviews de clientes em soluções que
+                melhoram diretamente seus negócios.
               </p>
             </div>
             <div className="flex flex-row gap-3">
               <Button size="lg" className="gap-4" variant="outline">
-                Jump on a call <PhoneCall className="w-4 h-4" />
+                Nossos planos <MoveRight className="w-4 h-4" />
               </Button>
               <Button size="lg" className="gap-4">
-                Sign up here <MoveRight className="w-4 h-4" />
+                Agenda uma demonstração <PhoneCall className="w-4 h-4" />
               </Button>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative w-[600px] ml-auto">
             <HeroVideoDialog
               className="dark:hidden block"
               animationStyle="from-center"
-              videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-              thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
+              videoSrc="https://www.youtube.com/embed/uSBiuW1Wp4I"
+              thumbnailSrc={BackgroundHeroVideoLight}
               thumbnailAlt="Hero Video"
             />
             <HeroVideoDialog
               className="hidden dark:block"
               animationStyle="from-center"
-              videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-              thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
+              videoSrc="https://www.youtube.com/embed/uSBiuW1Wp4I"
+              thumbnailSrc={BackgroundHeroVideoDark}
               thumbnailAlt="Hero Video"
             />
           </div>
