@@ -62,15 +62,17 @@ function Header() {
           : ""
       }`}
     >
-      <div className="w-full max-w-7xl mx-auto px-4">
-        <div className="flex justify-between h-14 items-center">
-          <Navbar />
-          <div className="flex items-center gap-4">
-            <Button>
-              Agende uma demo <PhoneCall className="w-4 h-4" />
-            </Button>
-            <ModeToggle />
-            <NavbarMobile />
+      <div className="w-full relative px-4">
+        <div className="container mx-auto">
+          <div className="flex justify-between h-14 items-center">
+            <Navbar />
+            <div className="flex items-center gap-4">
+              <Button>
+                Agende uma demo <PhoneCall className="w-4 h-4" />
+              </Button>
+              <ModeToggle />
+              <NavbarMobile />
+            </div>
           </div>
         </div>
       </div>

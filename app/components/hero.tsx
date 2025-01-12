@@ -32,7 +32,7 @@ function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative px-4">
       <FlickeringGrid
         className="absolute inset-0 z-0 [mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
         squareSize={4}
@@ -42,7 +42,7 @@ function Hero() {
         flickerChance={0.1}
         height={800}
       />
-      <div className="container mx-auto relative">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 py-12 lg:py-28 items-center">
           <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left max-w-lg">
             <div>
@@ -101,14 +101,14 @@ function Hero() {
               animationStyle="from-center"
               videoSrc="https://www.youtube.com/embed/uSBiuW1Wp4I"
               thumbnailSrc={BackgroundHeroVideoLight}
-              thumbnailAlt="Hero Video"
+              thumbnailAlt="Hero Video - No Friction AI"
             />
             <HeroVideoDialog
               className="hidden dark:block"
               animationStyle="from-center"
               videoSrc="https://www.youtube.com/embed/uSBiuW1Wp4I"
               thumbnailSrc={BackgroundHeroVideoDark}
-              thumbnailAlt="Hero Video"
+              thumbnailAlt="Hero Video - No Friction AI"
             />
           </div>
         </div>

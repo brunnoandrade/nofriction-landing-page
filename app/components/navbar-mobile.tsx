@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "./logo";
+import LogoMobile from "./logo-mobile";
 
 export function NavbarMobile() {
   const navigationItems = [
@@ -44,8 +45,8 @@ export function NavbarMobile() {
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
-        <Link to="/" className="mr-6 flex items-center">
-          <Logo />
+        <Link to="/" className="flex items-center">
+          <LogoMobile />
         </Link>
         <div className="grid gap-2 py-6">
           {navigationItems.map((item) => (
