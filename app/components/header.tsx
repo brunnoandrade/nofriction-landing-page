@@ -6,34 +6,6 @@ import { Navbar } from "./navbar";
 import { NavbarMobile } from "./navbar-mobile";
 
 function Header() {
-  const navigationItems = [
-    {
-      title: "Metodologia",
-      href: "/",
-      description: "",
-    },
-    {
-      title: "Clientes",
-      href: "/",
-      description: "",
-    },
-    {
-      title: "Soluções",
-      href: "/",
-      description: "",
-    },
-    {
-      title: "Funcionalidades",
-      href: "/",
-      description: "",
-    },
-    {
-      title: "Preço",
-      href: "/",
-      description: "",
-    },
-  ];
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
