@@ -42,8 +42,8 @@ function Hero() {
         flickerChance={0.1}
         height={800}
       />
-      <div className="container mx-auto z-0 relative">
-        <div className="flex flex-col lg:flex-row gap-8 py-20 lg:py-40 items-center">
+      <div className="container mx-auto relative">
+        <div className="flex flex-col lg:flex-row gap-8 py-12 lg:py-28 items-center">
           <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left max-w-lg">
             <div>
               <Button variant="secondary" size="sm" className="gap-4">
@@ -86,16 +86,16 @@ function Hero() {
                 melhoram diretamente seus negócios.
               </p>
             </div>
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-col gap-3 md:flex-row">
               <Button size="lg" className="gap-4" variant="outline">
                 Nossos planos <MoveRight className="w-4 h-4" />
               </Button>
               <Button size="lg" className="gap-4">
-                Agende uma demonstração <PhoneCall className="w-4 h-4" />
+                Agende uma demo <PhoneCall className="w-4 h-4" />
               </Button>
             </div>
           </div>
-          <div className="relative w-[600px] ml-auto">
+          <div className="relative lg:w-[650px] ml-auto">
             <HeroVideoDialog
               className="dark:hidden block"
               animationStyle="from-center"
