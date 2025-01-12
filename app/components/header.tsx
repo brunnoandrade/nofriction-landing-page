@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Menu, PhoneCall, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ModeToggle } from "./mode-toogle";
 import Logo from "./logo";
 
 function Header() {
@@ -126,8 +127,9 @@ function Header() {
         <div className="flex justify-end w-full gap-4">
           <div className="hidden md:inline"></div>
           <Button>
-            Agenda uma demonstração <PhoneCall className="w-4 h-4" />
+            Agende uma demonstração <PhoneCall className="w-4 h-4" />
           </Button>
+          <ModeToggle />
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>

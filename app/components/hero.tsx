@@ -42,7 +42,7 @@ function Hero() {
         flickerChance={0.1}
         height={800}
       />
-      <div className="container mx-auto z-10 relative">
+      <div className="container mx-auto z-0 relative">
         <div className="flex flex-col lg:flex-row gap-8 py-20 lg:py-40 items-center">
           <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left max-w-lg">
             <div>
@@ -91,7 +91,7 @@ function Hero() {
                 Nossos planos <MoveRight className="w-4 h-4" />
               </Button>
               <Button size="lg" className="gap-4">
-                Agenda uma demonstração <PhoneCall className="w-4 h-4" />
+                Agende uma demonstração <PhoneCall className="w-4 h-4" />
               </Button>
             </div>
           </div>
