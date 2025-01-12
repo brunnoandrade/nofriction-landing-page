@@ -18,32 +18,32 @@ const Logo = () => {
         fill={color}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M19.0058 25.9292C19.3886 26.4298 20.5665 27.431 22.2155 27.431C23.8645 27.431 24.9638 26.3709 25.3073 25.8409C25.592 25.5071 26.1613 24.5982 26.1613 23.6324V12.2072C26.1613 12.0894 26.1142 11.8008 25.9257 11.5888C25.7372 11.3768 21.8229 7.45648 19.8892 5.52283C19.6831 5.33634 19.1413 5.03991 18.623 5.34615C18.1048 5.6524 18.0145 6.31789 18.0341 6.61235V13.5286C16.8823 12.4028 14.6737 10.2016 13.4846 9.01241C13.1017 8.51182 11.9239 7.51064 10.2749 7.51064C8.62591 7.51064 7.52658 8.57071 7.18304 9.10075C6.8984 9.43447 6.3291 10.3434 6.3291 11.3092V22.7344C6.3291 22.8522 6.37622 23.1408 6.56467 23.3528C6.75313 23.5648 10.6675 27.4851 12.6012 29.4188C12.8073 29.6053 13.3491 29.9017 13.8674 29.5954C14.3856 29.2892 14.4759 28.6237 14.4563 28.3293V21.413C15.6081 22.5388 17.8166 24.74 19.0058 25.9292ZM13.1964 14.8154C12.6051 15.4721 12.3244 16.1826 12.229 16.8524C12.1823 17.0944 12.1614 17.3132 12.1596 17.4929V25.7673L8.56722 22.2632V11.8686C8.50833 11.3779 8.64967 10.2962 9.68618 9.89574C10.7227 9.49526 11.5315 10.1215 11.8063 10.4847L14.9773 13.6263C14.7103 13.7146 14.4408 13.8363 14.1743 13.9986C13.7808 14.2293 13.4586 14.5103 13.1964 14.8154ZM17.5133 21.3152L20.6842 24.4568C20.959 24.82 21.7678 25.4462 22.8043 25.0458C23.8408 24.6453 23.9822 23.5636 23.9233 23.0728V12.6783L20.3309 9.17414V17.4486C20.3291 17.6289 20.308 17.8486 20.261 18.0916C20.1654 18.7604 19.8848 19.4695 19.2948 20.1252C19.0329 20.4303 18.7108 20.7113 18.3175 20.9421C18.0506 21.1048 17.7807 21.2268 17.5133 21.3152ZM17.1955 18.9582C16.9228 19.1305 16.5996 19.2302 16.2532 19.2302C15.2774 19.2302 14.4864 18.4392 14.4864 17.4634C14.4864 16.8517 14.7973 16.3126 15.2697 15.9955C15.5507 15.8068 15.889 15.6968 16.253 15.6968C17.2287 15.6968 18.0197 16.4878 18.0197 17.4636C18.0197 18.0733 17.7108 18.6109 17.241 18.9285C17.226 18.9386 17.2108 18.9485 17.1955 18.9582Z"
         fill="url(#paint0_linear_53_1527)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M20.3007 17.5225H20.317V9.10083H18.0791V13.5725C18.369 13.8555 18.5867 14.0651 18.6967 14.1655C19.2385 14.6602 19.688 15.3532 19.8451 15.6378C20.0676 16.0412 20.2993 16.7296 20.3007 17.5225Z"
         fill="url(#paint1_linear_53_1527)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M12.1921 17.5225H12.1904V25.7086H14.4283V21.3848C14.1304 21.0938 13.9066 20.8782 13.7946 20.776C13.2528 20.2813 12.8033 19.5883 12.6462 19.3036C12.4335 18.918 12.2123 18.2716 12.1921 17.5225Z"
         fill="url(#paint2_linear_53_1527)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M14.9722 18.7027L17.5072 21.3302C19.1379 20.8018 20.3171 19.2704 20.3171 17.4637C20.3171 16.3308 19.8535 15.3062 19.1056 14.5692L17.4814 16.1935C17.8136 16.5147 18.0201 16.965 18.0201 17.4636C18.0201 18.4394 17.2291 19.2304 16.2533 19.2304C15.7547 19.2304 15.3044 19.0239 14.9832 18.6917L14.9722 18.7027ZM13.8972 14.1526L12.9424 15.1074C13.2053 14.7386 13.5283 14.4155 13.8972 14.1526Z"
         fill="url(#paint3_linear_53_1527)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M17.5803 16.2368L14.9554 13.6118C13.348 14.1536 12.1904 15.6734 12.1904 17.4635C12.1904 18.611 12.666 19.6474 13.4309 20.3863L15.0555 18.7617C14.706 18.4389 14.4872 17.9767 14.4872 17.4635C14.4872 16.4877 15.2782 15.6967 16.254 15.6967C16.7672 15.6967 17.2293 15.9156 17.5521 16.265L17.5803 16.2368Z"
         fill="url(#paint4_linear_53_1527)"
       />
@@ -56,8 +56,8 @@ const Logo = () => {
           y2="7.47936"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.14398" stop-color="#114D95" />
-          <stop offset="0.822713" stop-color="#38D133" />
+          <stop offset="0.14398" stopColor="#114D95" />
+          <stop offset="0.822713" stopColor="#38D133" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_53_1527"
@@ -67,8 +67,8 @@ const Logo = () => {
           y2="17.5225"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="white" stop-opacity="0.1" />
+          <stop stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="white" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_53_1527"
@@ -78,8 +78,8 @@ const Logo = () => {
           y2="25.7086"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D9D9D9" stop-opacity="0.1" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#D9D9D9" stopOpacity="0.1" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_53_1527"
@@ -89,8 +89,8 @@ const Logo = () => {
           y2="20.5542"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.623442" stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="white" stop-opacity="0.2" />
+          <stop offset="0.623442" stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="white" stopOpacity="0.2" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_53_1527"
@@ -100,8 +100,8 @@ const Logo = () => {
           y2="18.818"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0.2" />
-          <stop offset="0.317967" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" stopOpacity="0.2" />
+          <stop offset="0.317967" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
