@@ -6,8 +6,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
 import type { Route } from "./+types/root";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "./components/header";
 import stylesheet from "./app.css?url";
 
 export const links: Route.LinksFunction = () => [
@@ -34,9 +35,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <ThemeProvider defaultTheme="light" storageKey="ui-theme">
+          <Header />
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+        </ThemeProvider>
       </body>
     </html>
   );

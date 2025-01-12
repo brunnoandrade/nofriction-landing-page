@@ -1,13 +1,16 @@
+import { Hero } from "@/components/hero";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "No Friction AI" },
+    {
+      name: "description",
+      content: "Uma solução de IA que converte opiniões em orientações.",
+    },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <Hero />;
 }
